@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        '': '2.5rem',  // Customize as needed
-        'home-heading-large': '4.5rem',
+        'home-heading-large': '4rem',
+        'home-heading-small': '2.5rem',
       },
     },
   },
