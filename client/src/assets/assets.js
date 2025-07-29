@@ -283,7 +283,7 @@ export const dummyCourses = [
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T04:47:44.701Z",
         "__v": 4,
-        "courseThumbnail": "https://img.youtube.com/vi/CBWnBi-awSA/maxresdefault.jpg"
+        "courseThumbnail": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fjavascript%2Fjavascript-tutorial%2F&psig=AOvVaw2ugxtYDRhqaLqIQ7oLyrxJ&ust=1753897280343000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCICCudvO4o4DFQAAAAAdAAAAABAE"
     },
     {
         "_id": "675ac1512100b91a6d9b8b24",
