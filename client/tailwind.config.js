@@ -1,5 +1,3 @@
-// tailwind.config.js
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -12,6 +10,9 @@ export default {
         'home-heading-large': '4rem',
         'home-heading-small': '2.5rem',
       },
+      gridTemplateColumns:{
+        'auto':'repeat(auto-fit, minmax(200px,1fr))'
+      }
     },
   },
   plugins: [],

@@ -13,7 +13,7 @@ const CourseSection = () => {
         Learn in-demand skills in programming, design, marketing, and more with hands-on projects.
       </p>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 my-6">
+      <div className="grid grid-cols-4 px-4 md:px-0 md:my-16 my-10 gap-4">
        { allCourses?.slice(0, 4).map((course,index) => <CourseCard key={index} course={course}/> )}
       </div>
 
