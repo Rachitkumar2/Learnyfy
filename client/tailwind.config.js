@@ -7,8 +7,11 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        'home-heading-large': '4rem',
-        'home-heading-small': '2.5rem',
+        'course-details-heading-small':['26px','36px'],
+        'course-details-heading-large':['36px','44px'],
+        'home-heading-small':['28px','34px'],
+        'home-heading-large':['48px','px'],
+
       },
       gridTemplateColumns:{
         'auto':'repeat(auto-fit, minmax(200px,1fr))'
