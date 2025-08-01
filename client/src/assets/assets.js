@@ -189,7 +189,7 @@ export const dummyStudentEnrolled = [
             "imageUrl": "https://plus.unsplash.com/premium_photo-1685086785054-d047cdc0e525?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         "courseTitle": "Introduction to JavaScript",
-        "purchaseDate": "2024-12-20T08:59:49.964Z"
+        "purchaseDate": "2025-12-20T08:59:49.964Z"
     },
     {
         "student": {
@@ -216,7 +216,7 @@ export const dummyCourses = [
         "_id": "605c72efb3f1c2b1f8e4e1a1",
         "courseTitle": "Introduction to JavaScript",
         "courseDescription": "<h2>Learn the Basics of JavaScript</h2><p>JavaScript is a versatile programming language that powers the web. In this course, you will learn the fundamentals of JavaScript, including syntax, data types, and control structures.</p><p>This course is perfect for beginners who want to start their journey in web development. By the end of this course, you will be able to create interactive web pages and understand the core concepts of JavaScript.</p><ul><li>Understand the basics of programming</li><li>Learn how to manipulate the DOM</li><li>Create dynamic web applications</li></ul>",
-        "coursePrice": 49.99,
+        "coursePrice": 6500,
         "isPublished": true,
         "discount": 20,
         "courseContent": [
@@ -289,7 +289,7 @@ export const dummyCourses = [
         "_id": "675ac1512100b91a6d9b8b24",
         "courseTitle": "Advanced Python Programming",
         "courseDescription": "<h2>Deep Dive into Python Programming</h2><p>This course is designed for those who have a basic understanding of Python and want to take their skills to the next level. You will explore advanced topics such as decorators, generators, and context managers.</p><p>By the end of this course, you will be able to write efficient and clean Python code, and understand how to leverage Python's powerful features for real-world applications.</p><ul><li>Master advanced data structures</li><li>Implement object-oriented programming concepts</li><li>Work with libraries and frameworks</li></ul>",
-        "coursePrice": 79.99,
+        "coursePrice": 6500,
         "isPublished": true,
         "discount": 15,
         "courseContent": [
@@ -427,7 +427,7 @@ export const dummyCourses = [
         "_id": "605c72efb3f1c2b1f8e4e1a7",
         "courseTitle": "Web Development Bootcamp",
         "courseDescription": "<h2>Become a Full-Stack Web Developer</h2><p>This comprehensive bootcamp covers everything you need to know to become a full-stack web developer. From HTML and CSS to JavaScript and backend technologies, this course is designed to take you from beginner to job-ready.</p><p>Throughout the course, you will work on real-world projects, build a portfolio, and gain the skills necessary to succeed in the tech industry.</p><ul><li>Learn front-end and back-end development</li><li>Build responsive and dynamic web applications</li><li>Understand databases and server-side programming</li></ul>",
-        "coursePrice": 99.99,
+        "coursePrice": 1000,
         "isPublished": true,
         "discount": 25,
         "courseContent": [
@@ -493,7 +493,7 @@ export const dummyCourses = [
         "_id": "605c72efb3f1c2b1f8e4e1ac",
         "courseTitle": "Cloud Computing Essentials",
         "courseDescription": "<h2>Master Cloud Fundamentals</h2><p>Learn the foundations of cloud computing and explore popular cloud platforms like AWS, Azure, and Google Cloud. This course is ideal for IT professionals and developers looking to transition to cloud-based solutions.</p><p>By the end of this course, you will understand cloud services, deployment models, and best practices for using cloud resources efficiently.</p><ul><li>Understand cloud architecture</li><li>Learn to work with AWS, Azure, and GCP</li><li>Explore serverless computing and storage solutions</li></ul>",
-        "coursePrice": 69.99,
+        "coursePrice": 6500,
         "isPublished": true,
         "discount": 20,
         "courseContent": [
@@ -696,7 +696,7 @@ export const dummyCourses = [
         "_id": "605c72efb3f1c2b1f8e4e1ab",
         "courseTitle": "Introduction to Cybersecurity",
         "courseDescription": "<h2>Protect the Digital World</h2><p>This course covers the essentials of cybersecurity, including understanding threats, vulnerabilities, and how to secure systems against cyber-attacks. Ideal for beginners, this course will prepare you for a career in cybersecurity.</p><p>By the end of this course, you will be able to identify and mitigate risks, implement security best practices, and understand the fundamentals of encryption and network security.</p><ul><li>Understand common cybersecurity threats</li><li>Learn about encryption and secure communication</li><li>Explore tools for penetration testing</li></ul>",
-        "coursePrice": 59.99,
+        "coursePrice": 1000,
         "isPublished": true,
         "discount": 15,
         "courseContent": [
