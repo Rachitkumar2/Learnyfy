@@ -4,7 +4,7 @@ import { AppContext } from '../../context/AppContext';
 import { Link } from 'react-router-dom';
 
 const CourseCard = ({ course }) => {
-  const { currency } = useContext(AppContext);
+  const { currency,calculateRating } = useContext(AppContext);
 
   return (
     <Link to={'/course/'+ course._id} onClick={()=>scrollTo(0,0)}className='border border-gray-500/30 pb-6 overflow-hidden rounded-lg'>
@@ -13,10 +13,10 @@ const CourseCard = ({ course }) => {
         <h3 className='p-3 text-base font-semibold'>{course.courseTitle}</h3>
         <p className='text-gray-500'>{course.educator.name}</p> 
         <div className='flex items-center space-x-2'>
-          <p>3</p>
+          <p>{calculateRating(course)}</p>
           <div className='flex' >
             {[...Array(5)].map((_, i) => (
-              <img key={i} src={assets.star} alt="" 
+              <img key={i} src={i<Math.floor(calculateRating(course)) ? assets.star:assets.star_blank} alt="" 
               className='w-3.5 h-3.5'/>
             ))}
           </div>

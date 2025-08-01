@@ -15,12 +15,12 @@ export const AppContextProvider = ({ children }) => {
     setAllCourses(dummyCourses)
   }
   const calculateRating=(course)=>{
-    if(course.courseRating.length===0){
+    if(!course?.courseRating|| course.courseRating.length===0){
       return 0;
     }
     let totalRating=0
     course.courseRating.forEach(rating=>{
-      totalRating+=rating.rating
+      totalRating+=rating.rating;
     })
     return totalRating/course.courseRating.length
   }
