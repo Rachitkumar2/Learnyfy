@@ -10,6 +10,7 @@ export const AppContextProvider = ({ children }) => {
   const navigate =useNavigate()
 
   const [allCourses,setAllCourses]=useState([])
+  const [isEdudcator,setIsEducator]=useState(true)
   //Fetch All Courses
   const fetchAllCourses = async ()=>{
     setAllCourses(dummyCourses)
@@ -31,7 +32,7 @@ export const AppContextProvider = ({ children }) => {
 
 
   const value = {
-      currency,allCourses,navigate,calculateRating
+      currency,allCourses,navigate,calculateRating,isEdudcator, setIsEducator
   }
 
   return (

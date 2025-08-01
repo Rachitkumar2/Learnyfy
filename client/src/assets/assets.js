@@ -276,7 +276,7 @@ export const dummyCourses = [
         "courseRatings": [
             {
                 "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
-                "rating": 3,
+                "rating": 5,
                 "_id": "6773e37360cb0ab974342314"
             }
         ],
@@ -418,8 +418,8 @@ export const dummyCourses = [
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
         "courseRatings": [],
-        "createdAt": "2024-12-27T11:30:00.000Z",
-        "updatedAt": "2024-12-31T04:14:49.773Z",
+        "createdAt": "2025-08-01T11:30:00.000Z",
+        "updatedAt": "2025-08-01T04:14:49.773Z",
         "__v": 2,
         "courseThumbnail": "https://plus.unsplash.com/premium_photo-1674669009418-2643aa58b11b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },

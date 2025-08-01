@@ -20,7 +20,7 @@ const CourseCard = ({ course }) => {
               className='w-3.5 h-3.5'/>
             ))}
           </div>
-          <p className='text-gray-500'>30</p>
+          <p className='text-gray-500'>{course.courseRatings.length}</p>
         </div>
         <p className='text-base font-semibold text-gray-800'>
           {currency}
