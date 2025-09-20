@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'gilroy': ['Gilroy', 'Outfit', 'sans-serif'],
+        'outfit': ['Outfit', 'sans-serif'],
+      },
       fontSize: {
         'course-details-heading-small':['26px','36px'],
         'course-details-heading-large':['36px','44px'],
