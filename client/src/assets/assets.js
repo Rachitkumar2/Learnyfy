@@ -103,21 +103,21 @@ export const dummyEducatorData = {
 
 export const dummyTestimonial = [
     {
-        name: 'Rachit Kumar',
+        name: 'John Doe',
         role: 'SWE 1 @ Amazon',
         image: assets.profile_img_1,
         rating: 5,
         feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, libero accusantium officia id voluptatibus distinctio amet repellat minima ipsa quo.',
     },
     {
-        name: 'Sarthak Monga',
+        name: 'John Doe',
         role: 'SWE 2 @ Samsung',
         image: assets.profile_img_2,
         rating: 4,
         feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, libero accusantium officia id voluptatibus distinctio amet repellat minima ipsa quo.',
     },
     {
-        name: 'Shubham Bose',
+        name: 'John Doe',
         role: 'SWE 2 @ Google',
         image: assets.profile_img_3,
         rating: 4.5,
@@ -552,7 +552,7 @@ export const dummyCourses = [
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2024-12-31T05:32:55.357Z",
         "__v": 1,
-        "courseThumbnail": "https://img.youtube.com/vi/0yboGn8errU/maxresdefault.jpg"
+        "courseThumbnail": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ad",
@@ -625,7 +625,7 @@ export const dummyCourses = [
         "createdAt": "2024-12-27T10:00:00.000Z",
         "updatedAt": "2024-12-31T09:57:48.992Z",
         "__v": 3,
-        "courseThumbnail": "https://img.youtube.com/vi/E4znbZgUWzA/maxresdefault.jpg"
+        "courseThumbnail": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1aa",
@@ -690,7 +690,7 @@ export const dummyCourses = [
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T06:53:59.753Z",
         "__v": 1,
-        "courseThumbnail": "https://img.youtube.com/vi/631lFJdQvoo/maxresdefault.jpg"
+        "courseThumbnail": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ab",
@@ -755,6 +755,6 @@ export const dummyCourses = [
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T06:56:13.208Z",
         "__v": 1,
-        "courseThumbnail": "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg"
+        "courseThumbnail": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
 ]

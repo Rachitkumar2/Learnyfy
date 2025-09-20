@@ -7,12 +7,12 @@ const CourseCard = ({ course }) => {
   const { currency,calculateRating } = useContext(AppContext);
 
   return (
-    <Link to={'/course/'+ course._id} onClick={()=>scrollTo(0,0)}className='border border-gray-500/30 pb-6 overflow-hidden rounded-lg'>
-      <img className= 'w-full h-48 object-cover rounded-t-lg'src={course.courseThumbnail} alt="" />
-      <div className='p-3 text-left'>
-        <h3 className='p-3 text-base font-semibold'>{course.courseTitle}</h3>
-        <p className='text-gray-500'>{course.educator.name}</p> 
-        <div className='flex items-center space-x-2'>
+    <Link to={'/course/'+ course._id} onClick={()=>scrollTo(0,0)} className='border border-gray-500/30 pb-6 overflow-hidden rounded-lg hover:shadow-lg transition-shadow duration-300 block'>
+      <img className='w-full h-48 object-cover rounded-t-lg' src={course.courseThumbnail} alt="" />
+      <div className='p-4 text-left'>
+        <h3 className='text-base font-semibold mb-2 line-clamp-2'>{course.courseTitle}</h3>
+        <p className='text-gray-500 mb-2'>{course.educator.name}</p> 
+        <div className='flex items-center space-x-2 mb-3'>
           <p>{calculateRating(course)}</p>
           <div className='flex' >
             {[...Array(5)].map((_, i) => (
@@ -20,9 +20,9 @@ const CourseCard = ({ course }) => {
               className='w-3.5 h-3.5'/>
             ))}
           </div>
-          <p className='text-gray-500'>{course.courseRatings.length}</p>
+          <p className='text-gray-500'>({course.courseRatings.length})</p>
         </div>
-        <p className='text-base font-semibold text-gray-800'>
+        <p className='text-lg font-semibold text-gray-800'>
           {currency}
           {(
             course.coursePrice -
