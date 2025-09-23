@@ -11,7 +11,7 @@ const CourseCard = ({ course }) => {
       <img className='w-full h-48 object-cover rounded-t-lg' src={course.courseThumbnail} alt="" />
       <div className='p-4 text-left'>
         <h3 className='text-base font-semibold mb-2 line-clamp-2'>{course.courseTitle}</h3>
-        <p className='text-gray-500 mb-2'>{course.educator.name}</p> 
+        <p className='text-gray-500 mb-2'>John</p> 
         <div className='flex items-center space-x-2 mb-3'>
           <p>{calculateRating(course)}</p>
           <div className='flex' >
@@ -20,7 +20,7 @@ const CourseCard = ({ course }) => {
               className='w-3.5 h-3.5'/>
             ))}
           </div>
-          <p className='text-gray-500'>({course.courseRatings.length})</p>
+          <p className='text-gray-500'>({course.courseRatings?.length || 0})</p>
         </div>
         <p className='text-lg font-semibold text-gray-800'>
           {currency}

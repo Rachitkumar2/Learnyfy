@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { AppContext } from '../../context/AppContext'
 import Loading from '../../components/student/Loading'
+import { assets } from '../../assets/assets'
 
 const CourseDetails = () => {
 
@@ -9,7 +10,7 @@ const CourseDetails = () => {
 
   const [courseData , setCourseData] = useState(null)
 
-  const {allCourses} = useContext(AppContext)
+  const {allCourses , calculateRating} = useContext(AppContext)
 
   const fetchCourseData = async () => {
    const findCourse = allCourses.find(course => course._id === id)
@@ -30,14 +31,21 @@ const CourseDetails = () => {
             {courseData?.courseTitle || 'Course Title'}
           </h1>
           <p className='text-gray-600' dangerouslySetInnerHTML={{__html: courseData?.courseDescription?.slice(0,200) + '...' || 'Course description will appear here...'}}></p>
-  
+           
+           {/* review and rating */}
+           <div className='flex items-center space-x-2 pt-3 pb-1  mb-3'>
+             <p>{calculateRating(courseData)}</p>
+             <div className='flex' >
+               {[...Array(5)].map((_, i) => (
+                 <img key={i} src={i<Math.floor(calculateRating(courseData)) ? assets.star:assets.star_blank} alt="" 
+                 className='w-3.5 h-3.5'/>
+               ))}
+             </div>
+             <p className='text-gray-500'>({courseData?.courseRatings?.length || 0})</p>
+           </div>
+           <p className='text-sm'>Course By <span className='text-blue-600 underline'>John</span></p>
           
-          
-          {/* Debug info - remove this later
-          <div className='mt-4 p-2 bg-yellow-100 rounded text-sm'>
-            <p> Course ID: {id}</p>
-            <p> Course found: {courseData ? 'Yes' : 'No'}</p>
-          </div> */}
+         
         </div>
         {/* right column */}
         <div className='flex-1 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg min-h-64'>
@@ -50,4 +58,4 @@ const CourseDetails = () => {
   ) : <Loading />
 }
 
-export default CourseDetails
+export default CourseDetails;
