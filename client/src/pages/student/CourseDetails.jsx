@@ -4,12 +4,14 @@ import { AppContext } from "../../context/AppContext";
 import Loading from "../../components/student/Loading";
 import { assets } from "../../assets/assets";
 import humanizeDuration from "humanize-duration";
+import Footer from "../../components/student/Footer";
 
 const CourseDetails = () => {
   const { id } = useParams();
 
   const [courseData, setCourseData] = useState(null);
   const [openSection, setopenSection] = useState({});
+  const [isAlreadyEnrolled, setisAlreadyEnrolled] = useState(false)
 
   const {
     allCourses,
@@ -21,6 +23,8 @@ const CourseDetails = () => {
 
   const fetchCourseData = async () => {
     if (allCourses.length > 0) {
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
       const findCourse = allCourses.find((course) => course._id === id);
       setCourseData(findCourse);
     }
@@ -35,9 +39,9 @@ const CourseDetails = () => {
   };
 
   return courseData ? (
-    <>
-      <div className="relative min-h-screen bg-gradient-to-br from-blue-200 via-cyan-100 to-purple-100">
-        <div className="flex md:flex-row flex-col-reverse gap-10 items-start justify-between md:px-36 px-8 md:pt-30 pt-20 text-left relative z-10">
+    <div className="flex flex-col min-h-screen">
+      <div className="relative flex-1 bg-gradient-to-br from-blue-200 via-cyan-100 to-purple-100">
+        <div className="flex md:flex-row flex-col-reverse gap-10 items-start justify-between md:px-36 px-8 md:pt-30 pt-20 pb-20 text-left relative z-10">
           {/* left column */}
           <div className="flex-1 bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg">
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
@@ -187,11 +191,24 @@ const CourseDetails = () => {
                   <p>{calculateNoOfLectures(courseData)} lessons</p>
                 </div>
               </div>
+              <button className="md:mt-6 mt-4 w-full py-3 rounded bg-blue-600 text-white font-medium cursor-pointer ">{isAlreadyEnrolled ? 'Aready Enrolled':'Enroll Now'}</button>
+
+              <div className="pt-6">
+                <p className="md:text-xl text-lg font-medium text-gray-800">What's in the course ?</p>
+                <ul className="ml-4 pt-2 text-sm md:text-default list-disc text-gray-500">
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   ) : (
     <Loading />
   );
