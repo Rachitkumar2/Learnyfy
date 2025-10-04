@@ -5,13 +5,12 @@ import CoursesList from './pages/student/CoursesList'
 import CourseDetails from './pages/student/CourseDetails'
 import MyEnrollments from './pages/student/MyEnrollments'
 import Player from './pages/student/Player'
-import Loading from './components/student/Loading'
 import Educator from './pages/educator/Educator'
 import Dashboard from './pages/educator/Dashboard'
 import StudentsEnrolled from './pages/educator/StudentsEnrolled'
 import Addcourse from './pages/educator/Addcourse'
 import Mycourses from './pages/educator/Mycourses'
-import Navbar from './components/student/Navbar'
+import { Loading, Navbar } from './components/student'
 
 
 const App = () => {
