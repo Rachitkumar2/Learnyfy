@@ -1,9 +1,20 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { AppContext } from '../../context/AppContext'
 
 const MyEnrollments = () => {
 
   const {enrolledCourses , calculateCourseDuration}=useContext(AppContext)
+
+  const [progressArray, setprogressArray] = useState([
+    {lecturecompleted:2 , totalLectures:4},
+    {lecturecompleted:1 , totalLectures:6},
+    {lecturecompleted:7 , totalLectures:10},
+    {lecturecompleted:4 , totalLectures:4},
+    {lecturecompleted:2 , totalLectures:4},
+    {lecturecompleted:8 , totalLectures:10},
+    {lecturecompleted:10 , totalLectures:10},
+    {lecturecompleted:3 , totalLectures:6}
+  ])
   return (
     <>
     <div className='md:px-36 px-8 pt-10'>
@@ -17,23 +28,25 @@ const MyEnrollments = () => {
             <th className='px-4 py-3 font-semibold truncate'>Status</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='text-gray-700'>
           {enrolledCourses.map((course ,index)=>(
-            <tr key={index}>
-              <td>
+            <tr key={index} className='border-b border-gray-500/20'>
+              <td className='md:px=4 pl-2 md:pl-4 py-3 flex items-center space-x-3'>
                 <img src={course.courseThumbnail} alt=""  className='w-14 sm:w-24 md:w-28'/>
-                <div>
-                  <p>{course.courseTitle}</p>
+                <div className='flex-1'>
+                  <p className='mb-1 max-sm:text-sm'>{course.courseTitle}</p>
                 </div>
               </td>
-              <td>
+              <td className='px-4 py-3 max-sm:hidden'>
                 {calculateCourseDuration(course)}
               </td>
-              <td>
-                4 /10 <span>Lectures</span>
+              <td className='px-4 py-3 max-sm:hidden'>
+                {progressArray[index] && `${progressArray[index].lecturecompleted} / ${progressArray[index].totalLectures}  `} <span>Lectures</span>
               </td>
-              <td>
-                <button>On Going</button>
+              <td className='px-4 py-3 max-sm:text-right'>
+                <button className='px-3 sm:px-5 py-1.5 sm:py-2 bg-sky-600 rounded-2xl font-semibold max-sm:text-xs text-white cursor-pointer'>
+                  {progressArray[index] && progressArray[index].lecturecompleted / progressArray[index].totalLectures === 1 ? 'Completed' : 'On Going'}
+                  </button>
               </td>
             </tr>
           ))}
