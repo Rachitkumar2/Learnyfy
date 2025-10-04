@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  base: '/Learnyfy/',
   plugins: [
     tailwindcss(),
     react()
@@ -11,6 +12,7 @@ export default defineConfig({
     extensions: ['.js', '.jsx', '.ts', '.tsx']
   },
   build: {
+    outDir: 'dist',
     rollupOptions: {
       output: {
         manualChunks: undefined
