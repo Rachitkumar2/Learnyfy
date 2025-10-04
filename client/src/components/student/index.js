@@ -1,12 +1,12 @@
 // Re-export all student components
-export { default as Hero } from './Hero.jsx';
-export { default as Companies } from './Companies.jsx';
-export { default as CourseSection } from './CourseSection.jsx';
-export { default as Testimonials } from './Testimonials.jsx';
-export { default as CallToAction } from './CallToAction.jsx';
-export { default as Footer } from './Footer.jsx';
-export { default as Loading } from './Loading.jsx';
-export { default as Navbar } from './Navbar.jsx';
-export { default as Searchbar } from './Searchbar.jsx';
-export { default as CourseCard } from './CourseCard.jsx';
-export { default as Rating } from './Rating.jsx';
+export { default as Hero } from './Hero';
+export { default as Companies } from './Companies';
+export { default as CourseSection } from './CourseSection';
+export { default as Testimonials } from './Testimonials';
+export { default as CallToAction } from './CallToAction';
+export { default as Footer } from './Footer';
+export { default as Loading } from './Loading';
+export { default as Navbar } from './Navbar';
+export { default as Searchbar } from './Searchbar';
+export { default as CourseCard } from './CourseCard';
+export { default as Rating } from './Rating';
