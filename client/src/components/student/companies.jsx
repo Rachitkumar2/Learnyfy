@@ -1,6 +1,6 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
-const companies = () => {
+const Companies = () => {
   return (
     <div className='pt-16'>
       <p className='text-base text-gray-500'>Learn From these companies</p>
@@ -15,4 +15,4 @@ const companies = () => {
   )
 }
 
-export default companies
+export default Companies
