@@ -1,9 +1,9 @@
-import Hero from '../../components/student/Hero';
-import Companies from '../../components/student/Companies';
-import CourseSection from '../../components/student/CourseSection';
-import Testimonials from '../../components/student/Testimonials';
-import CallToAction from '../../components/student/CallToAction';
-import Footer from '../../components/student/Footer';
+import Hero from '../../components/student/Hero.jsx';
+import Companies from '../../components/student/Companies.jsx';
+import CourseSection from '../../components/student/CourseSection.jsx';
+import Testimonials from '../../components/student/Testimonials.jsx';
+import CallToAction from '../../components/student/CallToAction.jsx';
+import Footer from '../../components/student/Footer.jsx';
 
 
 const Home = () => {
