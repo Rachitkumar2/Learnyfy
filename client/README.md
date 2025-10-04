@@ -128,7 +128,7 @@ npm run build
 
 ### Deployment 
 
-#### Vercel 
+
 
 
 ## 📝 License
